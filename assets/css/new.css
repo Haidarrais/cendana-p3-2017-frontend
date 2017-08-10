@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: verdana;
+}
+
+div.navbar {
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
+div.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+div.navbar ul li.left {
+    float: left;
+}
+
+div.navbar ul li.right {
+    float: right;
+}
+
+div.navbar ul li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.navbar img {
+    height: 16px;
+    display: inline-block;
+}
+
+div.navbar ul li a:hover:not(.active) {
+    background-color: white;
+    color: dimgray;
+}
+
+div.navbar ul li a.active {
+    background-color: white;
+    color: dimgray;
+}
+
+div.margin {
+    display: block;
+    position: relative;
+    height: 46px;
+    width: 100%;
+    background-color: dimgray;
+    z-index: 0;
+}
+
+
+div.content {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin: 0 0 0 15%;
+    background-color: white;
+}
+
+div.content img {
+    width: 100%;
+    display: inline-block;
+}
+
+div.content div.text {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+}
+
+div.content div.text {
+    display: inline-block;
+}
+
+div.content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.content ul li.left {
+    float: left;
+}
+
+div.content ul li.right {
+    float: right;
+}
+
+div.content ul li a {
+    display: block;
+    color: dimgray;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.content ul li p {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+div.margin {
+    display: block;
+    position: relative;
+    height: 46px;
+    width: 100%;
+    background-color: dimgray;
+    z-index: 0;
+}
+
+
+div.content {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin: 0 0 0 15%;
+    background-color: white;
+}
+
+div.toolbar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ccc;
+    color: black;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    color: black;
+    background-color: #ccc;
+    float: right;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+div.sidebar {
+    position: relative;
+    display: block;
+    width: 18%;
+    float: right;
+    margin: 0 15% 0 0;
+    background-color: white;
+    padding: 1%;
+}
+
+div.sidebar img.regular {
+    display: inline-block;
+    width: 100%;
+}
+
+div.sidebar img.subscribe {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    margin: 0 1% 0 1%;
+}
+
+div.sidebar a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+div.sidebar h4 {
+    display: inline-block;
+    width: 100%;
+    color: dimgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+div.sidebar2 {
+    position: relative;
+    display: block;
+    width: 18%;
+    float: right;
+    margin: 0 15% 0 0;
+    background-color: white;
+    padding: 1%;
+}
+
+div.sidebar2 h4 {
+    display: inline-block;
+    width: 100%;
+    color: dimgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+div.sidebar2 img {
+    display: inline-block;
+    width: 100%;
+}
+
+div.sidebar2 table {
+    width: 100%;
+    font-size: 9px;
+    border-bottom: 1px lightgray solid;
+}
+
+div.footer {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    background-color: dimgray;
+    padding: 1%;
+}
+
+div.footer p {
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes example {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+}

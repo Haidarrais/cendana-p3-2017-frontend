@@ -1,0 +1,335 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: verdana;
+}
+
+div.navbar {
+    z-index: 1;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
+div.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+div.navbar ul li.left {
+    float: left;
+}
+
+div.navbar ul li.right {
+    float: right;
+}
+
+div.navbar ul li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.navbar ul li a:hover:not(.active) {
+    background-color: white;
+    color: dimgray;
+}
+
+div.navbar ul li a.active {
+    background-color: white;
+    color: dimgray;
+}
+
+div.margin {
+    display: block;
+    position: relative;
+    height: 46px;
+    width: 100%;
+    background-color: dimgray;
+    z-index: 0;
+}
+
+div.header {
+    display: block;
+    background-color: white;
+    position: relative;
+    margin: 0 15% 0% 15%;
+    width: 70%;
+}
+
+div.header img {
+    display: inline-block;
+    width: 100%;
+}
+
+div.headbar {
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    height: 50px;
+    border-bottom: 10px solid white;
+}
+
+div.headbar ul {
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+div.headbar ul li.left {
+    float: left;
+}
+
+div.headbar ul li.right {
+    float: right;
+}
+
+div.headbar ul li a {
+    height: 50px;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.headbar ul li a.inactive:hover {
+    background-color: white;
+    color: dimgray;
+}
+
+div.headbar ul li a input:focus {
+    width: 200px;
+}
+
+div.content {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin: 0 0 0 15%;
+    background-color: white;
+}
+
+div.content h3 {
+    position: relative;
+    display: inline-block;
+    background-color: dimgray;
+    color: white;
+    margin: 10px 0 10px 0;
+    width: 98%;
+    padding: 1%;
+}
+
+div.content img {
+    display: inline-block;
+    width: 98%;
+    margin: 0 1% 0 1%;
+}
+
+div.content p {
+    color: dimgray;
+    display: inline-block;
+    margin: 10px;
+}
+
+div.content div.comment ul li img {
+    width: 100px;
+    float: left;
+    margin: 10px;
+}
+
+div.content div.comment ul li img.subcomment {
+    width: 70px;
+    float: left;
+    margin: 10px;
+}
+
+div.content div.comment ul li{
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+div.content div.comment ul li span{
+    font-size: 14px;
+}
+
+div.content div.comment ul li span.comment{
+    font-size: 10px;
+}
+
+div.content div.comment ul{
+    list-style-type: none;
+}
+
+div.content div.comment {
+    margin-left: 10px;
+}
+
+div.sidebar {
+    position: relative;
+    display: block;
+    width: 18%;
+    float: right;
+    margin: 0 15% 0 0;
+    background-color: white;
+    padding: 1%;
+}
+
+div.sidebar img.regular {
+    display: inline-block;
+    width: 100%;
+}
+
+div.sidebar img.subscribe {
+    display: inline-block;
+    width: 20%;
+    float: left;
+    margin: 0 1% 0 1%;
+}
+
+div.sidebar a {
+    text-decoration: none;
+    color: dimgray;
+}
+
+div.sidebar h4 {
+    display: inline-block;
+    width: 100%;
+    color: dimgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+div.sidebar2 {
+    position: relative;
+    display: block;
+    width: 18%;
+    float: right;
+    margin: 0 15% 0 0;
+    background-color: white;
+    padding: 1%;
+}
+
+div.sidebar2 h4 {
+    display: inline-block;
+    width: 100%;
+    color: dimgray;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+
+div.sidebar2 img {
+    display: inline-block;
+    width: 100%;
+}
+
+div.sidebar2 table {
+    width: 100%;
+    font-size: 9px;
+    border-bottom: 1px lightgray solid;
+}
+
+div.footer {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    background-color: dimgray;
+    padding: 1%;
+}
+
+div.footer p {
+    color: white;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 2px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    background-image: url('image/search.png');
+    background-size: 25px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 200px;
+}
+
+a {
+    text-decoration-line: none;
+    color: dimgray;
+    font-weight: bold;
+}
+
+a:hover {
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-name: link;
+}
+
+a.readmore:hover {
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-name: example;
+    /*margin-left:10px;*/
+    
+}
+
+@-webkit-keyframes link {
+    0%   {color:red;}
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}
+
+/* Standard syntax */
+@keyframes link {
+    0%   {color:red;}
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}
+
+@-webkit-keyframes example {
+    0%   {margin-left:0px;color: red;}
+    25%  {margin-left:15px;color: yellow;}
+    50%  {margin-left:0px;color: blue;}
+    75%  {margin-left:15px;color: green;}
+    100% {margin-left:0px;color: red;}
+}
+
+/* Standard syntax */
+@keyframes example {
+     0%   {margin-left:0px;color: red;}
+    25%  {margin-left:15px;color: yellow;}
+    50%  {margin-left:0px;color: blue;}
+    75%  {margin-left:15px;color: green;}
+    100% {margin-left:0px;color: red;}
+}
